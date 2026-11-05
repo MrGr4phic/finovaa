@@ -1,0 +1,20 @@
+FINOVA CLOUD 2.0 — HIZLI KURULUM
+================================
+
+1. Bu klasörü GitHub'da özel bir depoya yükleyin.
+2. https://railway.com üzerinde yeni proje açıp depoyu bağlayın.
+3. Projeye PostgreSQL veritabanı ekleyin.
+4. Finova web servisinde Variables bölümüne aşağıdakileri girin:
+   DATABASE_URL  = ${{Postgres.DATABASE_URL}}
+   NODE_ENV      = production
+   ALLOW_SIGNUP  = true
+   APP_ORIGIN    = https://...  (Networking'de oluşturulan HTTPS alan adınız)
+5. Networking'den uygulama için HTTPS alan adı oluşturup yayınlayın.
+6. Finova web adresini telefon ve bilgisayardan açın, kullanıcı adı ve şifre oluşturun.
+7. İlk hesabı oluşturduktan sonra ALLOW_SIGNUP=false yapın.
+8. Railway üzerinde PostgreSQL yedeklemelerini ayrıca etkinleştirin.
+
+NOT: Bu paket canlıya yüklenmiş bir uygulama değildir.
+Gerçek çevrimiçi kullanım için sunucu/veritabanı hizmeti gerekir.
+Eski Finova kayıtları JSON dışa aktarma/içe aktarma ile taşınır.
+Ayrıntılı bilgi için README.md dosyasını okuyun.

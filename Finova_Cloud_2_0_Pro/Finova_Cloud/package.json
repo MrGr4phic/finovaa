@@ -1,0 +1,15 @@
+{
+  "name": "finova-cloud",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Finova - kullanıcı hesaplı, bulut senkronizasyonlu finans yönetim sistemi",
+  "engines": {"node": ">=20"},
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --env-file=.env --watch server/index.js",
+    "local": "node --env-file=.env server/index.js",
+    "test": "node --test test/*.test.js"
+  },
+  "dependencies": {"pg": "^8.14.1"}
+}
